@@ -1,0 +1,198 @@
+
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background:
+    linear-gradient(#002a0c, #001105);
+      
+    
+  color: white;
+  padding: 80px 6%;
+}
+
+
+.box {
+  display: block;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    #5B7553 0%,
+    #002a0c 100%
+  );
+}
+
+
+.introduction {
+  width: min(1200px, 100%);
+  margin: 0 auto 55px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #2dd4bf;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.description {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.openButton {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.openButton:hover {
+  background: white;
+  border-color: white;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.demoSection {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  background: rgb(79, 112, 76);
+  backdrop-filter: blur(12px);
+}
+
+.phone {
+  width: min(420px, calc(100vw - 48px));
+  height: 820px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 10px solid #171717;
+  border-radius: 48px;
+  background: #171717;
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.phoneTop {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #171717;
+}
+
+.speaker {
+  width: 75px;
+  height: 6px;
+  border-radius: 999px;
+  background: #333333;
+}
+
+.screen {
+  position: relative;
+  height: calc(100% - 30px);
+  overflow: hidden;
+  border-radius: 35px;
+  background: black;
+}
+
+.iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: black;
+}
+
+.loading {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #050505;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #2dd4bf;
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 750px) {
+  .page {
+    padding: 50px 18px;
+  }
+
+  .introduction {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .openButton {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .demoSection {
+    padding: 20px 0;
+    border-radius: 24px;
+  }
+
+  .phone {
+    height: 760px;
+  }
+}
