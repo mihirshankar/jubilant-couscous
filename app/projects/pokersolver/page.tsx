@@ -45,7 +45,7 @@ export default function PokerSolverPage() {
       term.writeln("Connecting to Poker Solver backend...");
       term.writeln("");
 
-      socket = new WebSocket("ws://localhost:8000/ws/poker");
+      socket = new WebSocket("wss://poker-website-0cq2.onrender.com/ws/poker");
       socketRef.current = socket;
 
       socket.onopen = () => {
@@ -61,8 +61,9 @@ export default function PokerSolverPage() {
       socket.onerror = () => {
         setConnectionStatus("Connection Error");
         term.writeln("");
-        term.writeln("Could not connect to backend.");
-        term.writeln("Make sure FastAPI is running on http://localhost:8000");
+        term.writeln(
+          "Unable to connect to the Poker Solver backend. Please try again.",
+        );
       };
 
       socket.onclose = () => {
