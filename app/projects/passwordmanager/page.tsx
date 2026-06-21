@@ -10,7 +10,7 @@ type Account = {
 };
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_PASSWORD_MANAGER_API ?? "https://password-website-z9vh.onrender.com/";
+  process.env.NEXT_PUBLIC_PASSWORD_MANAGER_API ?? "https://password-website-z9vh.onrender.com";
 
 export default function PasswordManagerPage() {
   const [mode, setMode] = useState<"new" | "returning">("returning");
