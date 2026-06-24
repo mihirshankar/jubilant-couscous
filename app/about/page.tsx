@@ -32,18 +32,17 @@ const About = () => {
             </p>{" "}
             <p>
               {" "}
-              My work has included a Formula 1 race prediction model, an emotion
-              detection pipeline, and an electricity load forecasting model.
-              These projects have strengthened my interest i n using data to
+              My work has included a electricity load forecasting model, Formula
+              1 race prediction model, and an emotion detection pipeline. These
+              projects have strengthened my interest i n using data to
               understand complex problems and build useful, interactive
               applications.{" "}
             </p>{" "}
             <p>
               {" "}
-              Outside of computer science, I’m a member of the Cornell Raas
-              Dance Team. I also enjoy weightlifting and playing indie
-              games—currently, I’m making my way through <em>Hollow Knight</em>
-              .{" "}
+              Outside of computer science, I’m captain of the Cornell Raas
+              Dance Team. I also enjoy weightlifting and playing indie games.
+              I’m currently making my way through Cyberpunk 2077.{" "}
             </p>{" "}
           </section>{" "}
         </div>{" "}
