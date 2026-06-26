@@ -5,7 +5,7 @@
 
 
 :root {
-  --background: #be8a60ff;
+  --background: #5B7553;
   --foreground: #dff3e3;
 }
 
@@ -16,12 +16,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #5B7553;
-    --foreground: #dff3e3;
-  }
-}
 html{
   background-color: #5B7553;
 }
